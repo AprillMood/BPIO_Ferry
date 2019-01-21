@@ -22,6 +22,7 @@ Route::post('/categories', 'CategoryController@store');
 Route::get('/cities', 'CityController@index');
 Route::get('/cities/new', 'CityController@create');
 Route::post('/cities', 'CityController@store');
+Route::get('/cities/delete/{id}', 'CityController@destroy');
 
 Route::get('/citizens', 'CitizenController@index');
 Route::get('/citizens/new', 'CitizenController@create');
